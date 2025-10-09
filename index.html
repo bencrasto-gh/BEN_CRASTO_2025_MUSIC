@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BEN_CRASTO_MUSIC_2025</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;   /* Stack vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icon-link {
+  font-size: 2.5rem;
+  color: #ffffff;   /* White */
+  transition: color 0.3s;
+  pointer-events: auto;
+}
+
+.icon-link:hover {
+  color: #ffffff;   /* Keep white on hover */
+}
+
+a.no-alter {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.no-alter:hover {
+  text-decoration: none;
+  color: #00ffe1;
+}
+
+.player {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px 40px;          /* 20px top/bottom, 40px left/right */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 100%;                 /* Take full width of screen */
+  max-width: 1000px;            /* Limit max width for readability */
+  margin: 0 auto;              /* Center the box horizontally */
+  box-sizing: border-box;      /* Include padding inside width */
+}
+
+.track {
+  margin-bottom: 40px;
+}
+
+audio {
+  width: 100%;
+  margin: 10px 0 25px 0;
+}
+
+.tooltip {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.track-title {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.20rem;
+  gap: 2px;
+  display: flex;   
+}
+
+.download-icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+
+.download-icon:hover {
+  color: #fff;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.tooltip .tooltip-content {
+  visibility: hidden;
+  width: 220px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.tooltip:hover .tooltip-content,
+.tooltip.active .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tooltip-content img {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.track.playing {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #00ffe1;
+  padding-left: 26px;
+  transition: background-color 0.3s ease;
+}
+
+.font-audiowide {
+  font-family: 'Audiowide', cursive;
+}
+
+.font-sharetech {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.track-text {
+  display: inline;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 class="header-title">
+  <a href="https://soundcloud.com/bencrasto" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="icon-link no-alter" 
+     title="Visit Ben Crasto on SoundCloud">🎵</a>
+  <span class="title-text">BEN CRASTO 2025</span>
+</h1>
+
+<div class="player">
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">1_ANIMAL.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/1_ANIMAL.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>FROM DUSK TILL DAWN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-bC53q1KB5wXY7vDc-staDEQ-t1080x1080.png" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/1_ANIMAL.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">2_HATELUV.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/2_HATELUV.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>FROM DUSK TILL DAWN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-bC53q1KB5wXY7vDc-staDEQ-t1080x1080.png" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/2_HATELUV.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">3_PRESSURE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/3_PRESSURE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>FROM DUSK TILL DAWN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-bC53q1KB5wXY7vDc-staDEQ-t1080x1080.png" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/3_PRESSURE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">4_LATER.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/4_LATER.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>FROM DUSK TILL DAWN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-bC53q1KB5wXY7vDc-staDEQ-t1080x1080.png" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/4_LATER.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">5_FEEL.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/5_FEEL.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>FROM DUSK TILL DAWN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-bC53q1KB5wXY7vDc-staDEQ-t1080x1080.png" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/5_FEEL.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">6_SHUT THE DOOR.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/6_SHUT%20THE%20DOOR.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>THE SEVENTH WALL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-lHLEuCm8L1i3JNaF-FyzMVA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/6_SHUT%20THE%20DOOR.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">7_2X2.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/7_2X2.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>THE SEVENTH WALL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-lHLEuCm8L1i3JNaF-FyzMVA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/7_2X2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">8_FATAL.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/8_FATAL.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>THE SEVENTH WALL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-lHLEuCm8L1i3JNaF-FyzMVA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/8_FATAL.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">9_SOMETHING TO PROVE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/9_SOMETHING%20TO%20PROVE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>THE SEVENTH WALL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-lHLEuCm8L1i3JNaF-FyzMVA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/9_SOMETHING%20TO%20PROVE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">10_NOTHING.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/10_NOTHING.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>THE SEVENTH WALL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-lHLEuCm8L1i3JNaF-FyzMVA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/10_NOTHING.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">11_LET IT GO.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/11_LET%20IT%20GO.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 6, <strong>THE SEVENTH WALL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-lHLEuCm8L1i3JNaF-FyzMVA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/11_LET%20IT%20GO.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">12_TO THE MOON.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/12_TO%20THE%20MOON.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 7, <strong>THE SEVENTH WALL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-lHLEuCm8L1i3JNaF-FyzMVA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/12_TO%20THE%20MOON.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">13_SEE YA.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/13_SEE%20YA.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>?</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HVYWM0RsNzAG5UBh-pZxAJQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/13_SEE%20YA.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">14_SUFFOCATED.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/14_SUFFOCATED.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>?</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HVYWM0RsNzAG5UBh-pZxAJQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/14_SUFFOCATED.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">15_KINDA HOT.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/15_KINDA%20HOT.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>?</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HVYWM0RsNzAG5UBh-pZxAJQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/15_KINDA%20HOT.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">16_GODFATHER.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/16_GODFATHER.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>?</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HVYWM0RsNzAG5UBh-pZxAJQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/16_GODFATHER.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">17_VERTICAL.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/17_VERTICAL.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>SOUL PLANES</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-zhy2GfnKj8QAPDZj-chaIhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/17_VERTICAL.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">18_SANTA MONICA.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/18_SANTA%20MONICA.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>SOUL PLANES</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-zhy2GfnKj8QAPDZj-chaIhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/18_SANTA%20MONICA.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">19_PRODUCT OF THE GAME.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/19_PRODUCT%20OF%20THE%20GAME.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>SOUL PLANES</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-zhy2GfnKj8QAPDZj-chaIhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/19_PRODUCT%20OF%20THE%20GAME.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">20_REACTION.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/20_REACTION.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>SOUL PLANES</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-zhy2GfnKj8QAPDZj-chaIhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/20_REACTION.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">21_HEAD IN THE CLOUDS.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/21_HEAD%20IN%20THE%20CLOUDS.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>SOUL PLANES</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-zhy2GfnKj8QAPDZj-chaIhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/21_HEAD%20IN%20THE%20CLOUDS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">22_FIRST TIME.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/22_FIRST%20TIME.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>ALMOST ARTIFICIAL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tPsynZ9N2HKxVuuz-dv0kEA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/22_FIRST%20TIME.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">23_STUDIO.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/23_STUDIO.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>ALMOST ARTIFICIAL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tPsynZ9N2HKxVuuz-dv0kEA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/23_STUDIO.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">24_DON'T STOP.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/24_DON'T%20STOP.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>ALMOST ARTIFICIAL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tPsynZ9N2HKxVuuz-dv0kEA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/24_DON'T%20STOP.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">25_WHEELS.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/25_WHEELS.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>ALMOST ARTIFICIAL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tPsynZ9N2HKxVuuz-dv0kEA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/25_WHEELS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">26_TORONTO.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/26_TORONTO.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>ALMOST ARTIFICIAL</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tPsynZ9N2HKxVuuz-dv0kEA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/26_TORONTO.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">27_OUT OF POCKET.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/27_OUT%20OF%20POCKET.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>QUARTZ</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Aa8ck2aFDzqzIDSG-PREADA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/27_OUT%20OF%20POCKET.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">28_GUESSES.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/28_GUESSES.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>QUARTZ</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Aa8ck2aFDzqzIDSG-PREADA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/28_GUESSES.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">29_MOVE IT.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/29_MOVE%20IT.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>QUARTZ</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Aa8ck2aFDzqzIDSG-PREADA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/29_MOVE%20IT.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">30_F.O.O.L..mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/30_F.O.O.L..mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>QUARTZ</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Aa8ck2aFDzqzIDSG-PREADA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/30_F.O.O.L..mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">31_HUNDRED DAYS LATER.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/31_HUNDRED%20DAYS%20LATER.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>QUARTZ</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Aa8ck2aFDzqzIDSG-PREADA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/31_HUNDRED%20DAYS%20LATER.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">32_IS IT JUST ME.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/32_IS%20IT%20JUST%20ME.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 6, <strong>QUARTZ</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Aa8ck2aFDzqzIDSG-PREADA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/32_IS%20IT%20JUST%20ME.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">33_AU REVOIR MA CHERIE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/33_AU%20REVOIR%20MA%20CHERIE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 7, <strong>QUARTZ</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Aa8ck2aFDzqzIDSG-PREADA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/33_AU%20REVOIR%20MA%20CHERIE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">34_YOU AND YOURS.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/34_YOU%20AND%20YOURS.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>BLACK SPIRIT</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Q6o8qAirw5youRuW-FXmivg-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/34_YOU%20AND%20YOURS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">35_PAYBACK.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/35_PAYBACK.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>BLACK SPIRIT</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Q6o8qAirw5youRuW-FXmivg-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/35_PAYBACK.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">36_MARIANA TRENCH.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/36_MARIANA%20TRENCH.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>BLACK SPIRIT</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Q6o8qAirw5youRuW-FXmivg-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/36_MARIANA%20TRENCH.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">37_ALL THE WAY.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/37_ALL%20THE%20WAY.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>BLACK SPIRIT</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-Q6o8qAirw5youRuW-FXmivg-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/37_ALL%20THE%20WAY.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">38_CAN'T STAND.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/38_CAN'T%20STAND.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>*CRUX</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HBCR6EvZgVWoKS61-IZ6NhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/38_CAN'T%20STAND.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">39_REDO.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/39_REDO.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>*CRUX</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HBCR6EvZgVWoKS61-IZ6NhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/39_REDO.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">40_NEVER GIVING UP.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/40_NEVER%20GIVING%20UP.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>*CRUX</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HBCR6EvZgVWoKS61-IZ6NhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/40_NEVER%20GIVING%20UP.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">41_UNDERSTOOD.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/41_UNDERSTOOD.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>*CRUX</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HBCR6EvZgVWoKS61-IZ6NhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/41_UNDERSTOOD.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">42_X-FILES.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/42_X-FILES.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>*CRUX</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-HBCR6EvZgVWoKS61-IZ6NhA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/42_X-FILES.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">43_SAVING GRACE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/43_SAVING%20GRACE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>THE SPACE BETWEEN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-WWphaDZlWBsIxeMQ-WyLBmQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/43_SAVING%20GRACE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">44_NERVOUS.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/44_NERVOUS.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>THE SPACE BETWEEN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-WWphaDZlWBsIxeMQ-WyLBmQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/44_NERVOUS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">45_KEEP MY PEACE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/45_KEEP%20MY%20PEACE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>THE SPACE BETWEEN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-WWphaDZlWBsIxeMQ-WyLBmQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/45_KEEP%20MY%20PEACE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">46_NEXT IN LINE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/46_NEXT%20IN%20LINE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>THE SPACE BETWEEN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-WWphaDZlWBsIxeMQ-WyLBmQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/46_NEXT%20IN%20LINE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">47_HIDE AND SEEK.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/47_HIDE%20AND%20SEEK.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>THE SPACE BETWEEN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-WWphaDZlWBsIxeMQ-WyLBmQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/47_HIDE%20AND%20SEEK.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">48_DEFROST.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/48_DEFROST.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 6, <strong>THE SPACE BETWEEN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-WWphaDZlWBsIxeMQ-WyLBmQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/48_DEFROST.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">49_MILESTONES.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/49_MILESTONES.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 7, <strong>THE SPACE BETWEEN</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-WWphaDZlWBsIxeMQ-WyLBmQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/49_MILESTONES.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">50_BEAT IT.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/50_BEAT%20IT.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>¿</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tqRIlI0yS5JSAXDL-7cmj8g-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/50_BEAT%20IT.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">51_DISAPPEARANCE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/51_DISAPPEARANCE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>¿</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tqRIlI0yS5JSAXDL-7cmj8g-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/51_DISAPPEARANCE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">52_EQUALIZER.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/52_EQUALIZER.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>¿</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tqRIlI0yS5JSAXDL-7cmj8g-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/52_EQUALIZER.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">53_STRIKER.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/53_STRIKER.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>¿</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tqRIlI0yS5JSAXDL-7cmj8g-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/53_STRIKER.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">54_AFFECTION.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/54_AFFECTION.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>¿</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tqRIlI0yS5JSAXDL-7cmj8g-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/54_AFFECTION.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">55_SOUTH PARK.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/55_SOUTH%20PARK.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 6, <strong>¿</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-tqRIlI0yS5JSAXDL-7cmj8g-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/55_SOUTH%20PARK.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">56_PHONE RINGING.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/56_PHONE%20RINGING.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>CARTE BLANCHE</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-YsCndBygwqB3cyrL-tVzLxw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/56_PHONE%20RINGING.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">57_NEVER WAS ENOUGH.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/57_NEVER%20WAS%20ENOUGH.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>CARTE BLANCHE</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-YsCndBygwqB3cyrL-tVzLxw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/57_NEVER%20WAS%20ENOUGH.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">58_CHOKEHOLD.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/58_CHOKEHOLD.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>CARTE BLANCHE</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-YsCndBygwqB3cyrL-tVzLxw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/58_CHOKEHOLD.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">59_ON ME.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/59_ON%20ME.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>CARTE BLANCHE</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-YsCndBygwqB3cyrL-tVzLxw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/59_ON%20ME.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">60_CROSSES.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/60_CROSSES.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>CARTE BLANCHE</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-YsCndBygwqB3cyrL-tVzLxw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/60_CROSSES.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">61_MICROMANAGEMENT.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/61_MICROMANAGEMENT.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 6, <strong>CARTE BLANCHE</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-YsCndBygwqB3cyrL-tVzLxw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/61_MICROMANAGEMENT.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">62_GOING DIGITAL.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/62_GOING%20DIGITAL.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 7, <strong>CARTE BLANCHE</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-YsCndBygwqB3cyrL-tVzLxw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/62_GOING%20DIGITAL.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">63_REDLINE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/63_REDLINE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>RED VELVET</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-LcCUQWJ5yXMVUVPd-FBPUYA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/63_REDLINE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">64_BLOODY SUNDAY.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/64_BLOODY%20SUNDAY.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>RED VELVET</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-LcCUQWJ5yXMVUVPd-FBPUYA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/64_BLOODY%20SUNDAY.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">65_DITTO.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/65_DITTO.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>RED VELVET</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-LcCUQWJ5yXMVUVPd-FBPUYA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/65_DITTO.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">66_COLDEST DECEMBER NIGHT.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/66_COLDEST%20DECEMBER%20NIGHT.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>RED VELVET</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-LcCUQWJ5yXMVUVPd-FBPUYA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/66_COLDEST%20DECEMBER%20NIGHT.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">67_WAY OUT.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/67_WAY%20OUT.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>RED VELVET</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-LcCUQWJ5yXMVUVPd-FBPUYA-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/67_WAY%20OUT.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">68_DECIDE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/68_DECIDE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>SACRA SIMULACRA</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-DciOvvvJK7jbKPXJ-S1YagQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/68_DECIDE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">69_IF YOU WILL.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/69_IF%20YOU%20WILL.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>SACRA SIMULACRA</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-DciOvvvJK7jbKPXJ-S1YagQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/69_IF%20YOU%20WILL.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">70_FLY MODE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/70_FLY%20MODE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>SACRA SIMULACRA</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-DciOvvvJK7jbKPXJ-S1YagQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/70_FLY%20MODE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">71_RESPECT.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/71_RESPECT.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>SACRA SIMULACRA</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-DciOvvvJK7jbKPXJ-S1YagQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/71_RESPECT.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">72_FIVE NIGHTS.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/72_FIVE%20NIGHTS.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 5, <strong>SACRA SIMULACRA</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-DciOvvvJK7jbKPXJ-S1YagQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/72_FIVE%20NIGHTS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">73_CURIOUS.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/73_CURIOUS.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 6, <strong>SACRA SIMULACRA</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-DciOvvvJK7jbKPXJ-S1YagQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/73_CURIOUS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">74_ALL FOR NONE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/74_ALL%20FOR%20NONE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 7, <strong>SACRA SIMULACRA</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-DciOvvvJK7jbKPXJ-S1YagQ-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/74_ALL%20FOR%20NONE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">75_ONE IN A MILLION.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/75_ONE%20IN%20A%20MILLION.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 1, <strong>ICE ROK</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-FStKgNXGOQm0eBWQ-Sqqwvw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/75_ONE%20IN%20A%20MILLION.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">76_COME BACK HOME.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/76_COME%20BACK%20HOME.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 2, <strong>ICE ROK</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-FStKgNXGOQm0eBWQ-Sqqwvw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/76_COME%20BACK%20HOME.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">77_DEAD OR ALIVE.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/77_DEAD%20OR%20ALIVE.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 3, <strong>ICE ROK</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-FStKgNXGOQm0eBWQ-Sqqwvw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/77_DEAD%20OR%20ALIVE.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="track">
+  <div class="tooltip">
+    <p class="track-title">
+      <span class="track-text">78_STAY FOCUSED.mp3</span>&nbsp;&nbsp;
+      <a href="https://archive.org/download/35-payback_202510/78_STAY%20FOCUSED.mp3" download class="download-icon" title="Download track">⬇</a>
+    </p>
+    <div class="tooltip-content">
+      TRACK 4, <strong>ICE ROK</strong><br>
+      <img src="https://i1.sndcdn.com/artworks-FStKgNXGOQm0eBWQ-Sqqwvw-t1080x1080.jpg" alt="ARTWORK">
+    </div>
+  </div>
+  <audio controls>
+    <source src="https://archive.org/download/35-payback_202510/78_STAY%20FOCUSED.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+</div>
+
+<script>
+  const audioPlayers = document.querySelectorAll('audio');
+
+  audioPlayers.forEach((player) => {
+    player.addEventListener('play', () => {
+      audioPlayers.forEach((otherPlayer) => {
+        if (otherPlayer !== player) {
+          otherPlayer.pause();
+          otherPlayer.closest('.track').classList.remove('playing');
+        }
+      });
+      player.closest('.track').classList.add('playing');
+    });
+
+    player.addEventListener('pause', () => {
+      player.closest('.track').classList.remove('playing');
+    });
+
+    player.addEventListener('ended', () => {
+      player.closest('.track').classList.remove('playing');
+    });
+  });
+
+  const tooltips = document.querySelectorAll('.tooltip');
+
+  tooltips.forEach((tooltip) => {
+    tooltip.addEventListener('click', (e) => {
+      e.stopPropagation();
+      tooltips.forEach((tip) => {
+        if (tip !== tooltip) tip.classList.remove('active');
+      });
+      tooltip.classList.toggle('active');
+    });
+  });
+
+  document.addEventListener('click', () => {
+    tooltips.forEach((tooltip) => tooltip.classList.remove('active'));
+  });
+
+  const fontClasses = ['font-audiowide', 'font-sharetech', 'font-orbitron'];
+
+  function applyAlternateFonts(element) {
+    const text = element.textContent?.trim();
+    if (!text) return;
+
+    // Avoid applying if already stylized
+    if (element.querySelector('span')) return;
+
+    // Clear the element
+    element.innerHTML = '';
+
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.textContent = text[i];
+      span.className = fontClasses[i % fontClasses.length];
+      element.appendChild(span);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Only target the elements that actually contain text you want to stylize
+    const stylizeSelectors = ['.title-text', '.track-text'];
+    stylizeSelectors.forEach(selector => {
+      document.querySelectorAll(selector).forEach(el => {
+        applyAlternateFonts(el);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
